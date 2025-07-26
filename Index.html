@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+    }
+    #header {
+      text-align: center;
+    }
+    #manu {
+      text-align: center;
+      background-color: rgba(98, 0, 255, 0.562);
+    }
+    #manu li {
+      display: inline-block;
+      padding: 15px 10px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #container {
+      text-align: center;
+      padding: 50px 100px;
+    }
+    #manu.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: rgba(98, 0, 255, 0.562);
+    }
+    #manu.sticky li {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+  <body>
+    <div id="header">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBSrZDa1yoSrQttLCrVBtfxPie7e-rkuOPRg&s"
+        alt="Logo"
+        style="width: 100px; height: 100px"
+      />
+    </div>
+    <nav id="manu">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Our Team</li>
+      <li>Client</li>
+      <li>Contact Us</li>
+    </nav>
+    <div id="container">
+      <h2>Welcome to Our Website</h2>
+      <img
+        src="https://www.w3schools.com/w3images/fjords.jpg"
+        alt="Fjords"
+        style="width: 100%; height: 300px"
+      />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ab nulla
+        illo possimus ea incidunt. Voluptates culpa nulla cum magni, nam dolor
+        fugit vitae maiores at animi excepturi saepe aperiam quae illum!
+        Similique beatae magnam dolore saepe mollitia aspernatur eos iusto
+        sapiente consequatur quae ad, hic pariatur amet nostrum vero
+        reprehenderit nam eius a autem praesentium error distinctio ea eum ut!
+        Quod in fugit ratione sint laudantium nobis id expedita deserunt culpa
+        nulla quas cum saepe molestiae, esse distinctio obcaecati omnis,
+        voluptas placeat ipsum debitis qui nisi nam maxime? Deleniti nam
+        voluptatem reiciendis, esse incidunt culpa cupiditate quas dolor labore
+        id atque saepe reprehenderit quaerat vitae eos veniam modi error itaque
+        quasi ea quis. In mollitia obcaecati ipsam esse laudantium alias ducimus
+        accusantium enim aut aliquid suscipit, sit, rerum commodi quibusdam
+        porro, dolorum magnam minima omnis. Placeat tempore facere optio autem
+        doloribus ratione nemo earum nam laborum nihil sequi, dolore ab rerum
+        voluptates atque? Voluptatibus alias facere quae nobis accusamus nemo
+        dolorem veniam iste error culpa? Modi ratione magni nesciunt sit impedit
+        similique eius, veniam tempora doloremque nam. Eius autem explicabo
+        facilis voluptatibus eaque modi incidunt, saepe optio eum fugiat veniam
+        sequi. Rerum non sint quia dolorum id, et nihil nisi minus doloremque
+        voluptatum nesciunt quaerat eaque incidunt, laborum distinctio, voluptas
+        nobis? Est sunt ab magnam neque ullam dicta, nemo nulla. Quia, explicabo
+        unde enim id, nemo quas, sint minima ad accusamus blanditiis adipisci
+        cupiditate quam harum quod quidem quo! Id assumenda eveniet perspiciatis
+        illo inventore provident quas quos nam, eum non sed, voluptas fugiat
+        reprehenderit, delectus officia eligendi quod cumque ex! A laboriosam
+        quidem impedit quo, animi laudantium sapiente recusandae aliquam nobis
+        totam deleniti fuga dolorum possimus ad consequatur aut veritatis sed,
+        officia pariatur aspernatur ducimus! Id veniam amet quos possimus
+        obcaecati quidem vitae, enim adipisci hic, perspiciatis temporibus et
+        animi, at nemo! Excepturi accusantium qui similique officia! Odio sit
+        perspiciatis, distinctio tempore iste sint, explicabo voluptatum aliquam
+        sapiente nemo voluptas asperiores sunt iure. Fuga sit sapiente velit
+        voluptatibus cupiditate magni hic laboriosam totam labore, eius nobis
+        enim harum vero at delectus quasi saepe amet eligendi autem neque! A
+        laborum repellendus cupiditate vero qui ut autem modi voluptatem,
+        accusamus suscipit molestias, at dolores. Ea ratione repudiandae non
+        odio ipsa exercitationem eum perspiciatis? Voluptate iure aperiam
+        nostrum harum quo atque repellendus dolorum amet! Cumque, mollitia
+        dignissimos. Quasi aliquid blanditiis rem deleniti fugit, rerum nemo
+        esse assumenda molestias veritatis! Voluptatum tempora a minus
+        necessitatibus doloribus repellendus alias nam accusamus error. Soluta
+        optio eum explicabo nobis eligendi nostrum, molestias illum iure
+        inventore blanditiis atque ex doloremque porro ad perspiciatis accusamus
+        vitae! Magni accusantium vel perferendis ab nostrum error nobis mollitia
+        earum placeat, in dolores explicabo voluptatum eaque, voluptates
+        voluptatibus blanditiis totam optio non accusamus repudiandae quis quia
+        a. Inventore dicta sapiente odio a, sed dignissimos, nulla optio nisi
+        est nostrum eos quasi obcaecati possimus sunt natus, nihil esse
+        laboriosam consequuntur distinctio! Dignissimos accusantium voluptas
+        harum amet minus aperiam eaque facilis, autem optio qui architecto
+        recusandae error ad itaque exercitationem enim sapiente animi.
+      </p>
+    </div>
+    <script>
+      window.addEventListener("scroll", function () {
+        let nav = document.getElementById("manu");
+        if (window.pageYOffset >= 190) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      });
+    </script>
+  </body>
+</html>
